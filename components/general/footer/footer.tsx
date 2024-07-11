@@ -1,3 +1,4 @@
+import DealerSection from "./dealer-section";
 import FooterNav from "./footer-nav";
 import Instructions from "./instructions";
 
@@ -7,6 +8,7 @@ export default function Footer() {
       <div className="max-w-screen-lg mx-auto px-4 text-sm text-black/40">
         <Instructions />
         <FooterNav />
+        <DealerSection />
       </div>
     </footer>
   );
