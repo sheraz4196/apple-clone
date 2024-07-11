@@ -1,7 +1,18 @@
 import { NavLinks } from "@/constants/nav-links";
-import { Search } from "lucide-react";
+import { Equal, Search, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import Sidebar from "./sidebar";
 
 export default function Header() {
   return (
@@ -16,7 +27,20 @@ export default function Header() {
           ))}
         </ol>
       </nav>
-      <Search className="size-4" />
+      <div className="flex items-center gap-4">
+        <Search className="size-4" />
+        <Drawer direction="top">
+          <DrawerTrigger className="lg:hidden">
+            <Equal />
+          </DrawerTrigger>
+          <DrawerContent className="top-0 mt-0 rounded-none overflow-auto">
+            <DrawerClose className="absolute top-3 right-1">
+              <X />
+            </DrawerClose>
+            <Sidebar />
+          </DrawerContent>
+        </Drawer>
+      </div>
     </header>
   );
 }
