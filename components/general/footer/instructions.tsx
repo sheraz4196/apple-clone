@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Instructions() {
   return (
-    <div className="text-xs text-black/50 pb-2.5">
+    <div className="text-xs text-black/50 pb-2.5 border-b order-[#CECECF]">
       <ol className="list-decimal pl-5 flex flex-col gap-2.5 pb-2.5">
         <li>
           Software and content may be sold separately. Title availability is
