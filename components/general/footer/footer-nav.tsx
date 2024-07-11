@@ -1,38 +1,15 @@
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
+import {
+  discoverLinks,
+  accountLinks,
+  entertainmentLinks,
+  educationLinks,
+  valuesLinks,
+  aboutLinks,
+} from "@/constants/footer-links";
 export default function FooterNav() {
-  const discoverLinks = [
-    "Mac",
-    "iPad",
-    "iPhone",
-    "Watch",
-    "AirPods",
-    "TV and Home",
-    "Air Tag",
-  ];
-  const accountLinks = ["Manage Your Apple ID", "iCloud.com"];
-  const entertainmentLinks = [
-    "Apple One",
-    "Apple TV+",
-    "Apple Music",
-    "Apple Arcade",
-    "Apple Fitness+",
-    "Apple Podcasts",
-    "Apple Books",
-    "App Store",
-  ];
-  const educationLinks = ["Apple and Education", "Buying For School Education"];
-  const valuesLinks = ["Accessibility", "Education", "Environment", "Privacy"];
-  const aboutLinks = [
-    "Newsroom",
-    "Apple executives",
-    "Job Opportunities",
-    "Investors",
-    "Ethics and policy compliance",
-    "Events",
-  ];
   return (
     <>
       <nav className="py-4 flex items-center gap-1">
@@ -134,13 +111,6 @@ export default function FooterNav() {
           </div>
         </div>
       </nav>
-      <div className="flex items-center justify-between">
-        <p>
-          <Link href={"#"} className="">
-            Find a dealer
-          </Link>
-        </p>
-      </div>
     </>
   );
 }
