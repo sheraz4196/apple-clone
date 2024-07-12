@@ -1,6 +1,6 @@
 export default function WelcomeSection() {
   return (
-    <section className="pt-14 lg:pt-24 mx-6 lg:mx-auto max-w-screen-lg">
+    <section className="pt-14 lg:pt-24 mx-6 lg:mx-auto max-w-screen-xl">
       <header className="text-[rgb(29, 29, 31)] flex flex-col lg:flex-row gap-2 lg:items-center lg:justify-between pb-14 lg:pb-20">
         <h1 className="text-7xl font-semibold">Mac</h1>
         <p className="w-56 text-xl font-semibold">
