@@ -4,4 +4,5 @@ export type ProductCardProps = {
   subHeading: string;
   heading: ReactNode;
   background: string;
+  black?: boolean;
 };

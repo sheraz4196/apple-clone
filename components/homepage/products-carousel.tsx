@@ -20,6 +20,7 @@ export default function ProductsCarousel() {
         </h3>
       ),
       background: "bg-[url('/assets/card/card-1.jpg')]",
+      black: false,
     },
     {
       subHeading: "Performance and battery",
@@ -31,11 +32,13 @@ export default function ProductsCarousel() {
         </h3>
       ),
       background: "bg-[url('/assets/card/card-2.jpg')]",
+      black: false,
     },
     {
       subHeading: "Mac and iPhone",
       heading: <h3 className="text-2xl">A dream Team.</h3>,
       background: "bg-[url('/assets/card/card-3.jpg')]",
+      black: true,
     },
     {
       subHeading: "Compatibility",
@@ -47,6 +50,7 @@ export default function ProductsCarousel() {
         </h3>
       ),
       background: "bg-[url('/assets/card/card-4.jpg')]",
+      black: true,
     },
     {
       subHeading: "Privacy & Security",
@@ -65,11 +69,12 @@ export default function ProductsCarousel() {
       <Carousel className="overflow-visible">
         <CarouselContent className="py-2.5">
           {Products.map((product, index) => (
-            <CarouselItem key={index} className="basis-1/3">
+            <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3">
               <ProductCard
                 subHeading={product.subHeading}
                 heading={product.heading}
                 background={product.background}
+                black={product.black}
               />
             </CarouselItem>
           ))}
