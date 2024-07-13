@@ -1,4 +1,5 @@
 import DiscoverSection from "@/components/homepage/discover-section";
+import FamilySection from "@/components/homepage/family-section";
 import WelcomeSection from "@/components/homepage/welcome";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <WelcomeSection />
       <DiscoverSection />
+      <FamilySection />
     </main>
   );
 }
