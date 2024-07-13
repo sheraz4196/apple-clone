@@ -46,7 +46,7 @@ export default function ProductsCarousel() {
           are in your Mac.
         </h3>
       ),
-      background: "bg-[url('/assets/card/card-2.jpg')]",
+      background: "bg-[url('/assets/card/card-4.jpg')]",
     },
     {
       subHeading: "Privacy & Security",
@@ -57,13 +57,13 @@ export default function ProductsCarousel() {
           is yours alone.
         </h3>
       ),
-      background: "bg-[url('/assets/card/card-2.jpg')]",
+      background: "bg-[url('/assets/card/card-5.jpg')]",
     },
   ];
   return (
     <div>
       <Carousel>
-        <CarouselContent>
+        <CarouselContent className="py-2.5">
           {Products.map((product, index) => (
             <CarouselItem key={index} className="basis-1/3">
               <ProductCard
@@ -74,6 +74,10 @@ export default function ProductsCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <div className="flex items-center absolute mt-12  right-28">
+          <CarouselPrevious className="relative bg-[#dadadeb0]" />
+          <CarouselNext className="relative" />
+        </div>
       </Carousel>
     </div>
   );
