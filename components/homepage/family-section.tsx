@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import MacBooks from "../general/mackbooks";
 
 export default function FamilySection() {
   return (
@@ -23,6 +24,7 @@ export default function FamilySection() {
             Monitors
           </li>
         </ol>
+        <MacBooks />
       </div>
     </section>
   );
