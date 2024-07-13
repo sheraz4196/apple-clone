@@ -12,6 +12,17 @@ export default function FamilySection() {
             <ChevronRight className="size-3" />
           </Link>
         </header>
+        <ol className="bg-white p-1.5 flex items-center mb-14 lg:mb-20 max-w-max rounded-full text-[#1d1d1f]">
+          <li className="bg-[#1d1d1f] text-white px-4 lg:px-6 py-2.5 text-sm lg:text-base rounded-full">
+            Laptops
+          </li>
+          <li className="px-4 lg:px-6 py-2.5 text-sm lg:text-base rounded-full">
+            Desktop computers
+          </li>
+          <li className="px-4 lg:px-6 py-2.5 text-sm lg:text-base rounded-full">
+            Monitors
+          </li>
+        </ol>
       </div>
     </section>
   );
