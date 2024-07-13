@@ -62,7 +62,7 @@ export default function ProductsCarousel() {
   ];
   return (
     <div>
-      <Carousel>
+      <Carousel className="overflow-visible">
         <CarouselContent className="py-2.5">
           {Products.map((product, index) => (
             <CarouselItem key={index} className="basis-1/3">
