@@ -36,7 +36,7 @@ export default function Shutter({ children, isOpen }: ShutterProps) {
             variants={shutterVariants}
           >
             <div className="w-full">{children}</div>
-            <div className="flex-1 w-full bg-green"></div>
+            <div className="flex-1 w-full bg-white/10 backdrop-blur-lg"></div>
           </motion.div>
         )}
       </AnimatePresence>
