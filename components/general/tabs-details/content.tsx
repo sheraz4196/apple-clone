@@ -1,13 +1,11 @@
 type Options = {
-  mac?: boolean;
-  ipad?: boolean;
-  iPhone?: boolean;
+  content: string;
 };
-export default function Content({ mac, ipad, iPhone }: Options) {
+export default function Content({ content }: Options) {
   return (
     <div className=" bg-white">
       <div className="grid gap-6 lg:grid-cols-4 max-w-screen-lg mx-auto px-6 py-14">
-        {mac && (
+        {content === "mac" && (
           <>
             <div className="flex flex-col gap-2">
               <p className="text-xs text-zinc-600">Meet the Mac</p>
@@ -39,7 +37,7 @@ export default function Content({ mac, ipad, iPhone }: Options) {
             </div>
           </>
         )}
-        {ipad && (
+        {content === "ipad" && (
           <>
             <div className="flex flex-col gap-2">
               <p className="text-xs text-zinc-600">Meet the iPad</p>
@@ -66,7 +64,32 @@ export default function Content({ mac, ipad, iPhone }: Options) {
             </div>
           </>
         )}
-        {iPhone && (
+        {content === "iphone" && (
+          <>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">Meet the iPad</p>
+              <p className="text-xl font-semibold">See All iPhone Models</p>
+              <p className="text-xl font-semibold">iPad 15</p>
+              <p className="text-xl font-semibold">iPhone 15 Pro</p>
+              <p className="text-xl font-semibold">iPhone 14</p>
+              <p className="text-xl font-semibold">iPhone 13</p>
+              <p className="text-xl font-semibold">iPhone SE</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">Meet the iPhone</p>
+              <p className="text-xs font-semibold">How to buy the iPhone?</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">More for the iPhone</p>
+              <p className="text-xs font-semibold">iPhone Support</p>
+              <p className="text-xs font-semibold">iOS 18 Preview</p>
+              <p className="text-xs font-semibold">Apple intelligence</p>
+              <p className="text-xs font-semibold">Apple Apps</p>
+              <p className="text-xs font-semibold">iPhone Privacy</p>
+            </div>
+          </>
+        )}
+        {content === "watch" && (
           <>
             <div className="flex flex-col gap-2">
               <p className="text-xs text-zinc-600">Meet the iPad</p>

@@ -55,7 +55,7 @@ export default function Header() {
         </div>
       </header>
       <Shutter isOpen={shutterOpen}>
-        <Content iPhone />
+        <Content content="watch" />
       </Shutter>
     </div>
   );
