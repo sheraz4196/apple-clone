@@ -69,3 +69,6 @@
 .delight {
   color: #b64400;
 }
+.header-screen {
+  height: calc(100vh-32px);
+}

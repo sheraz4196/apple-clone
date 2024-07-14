@@ -22,7 +22,7 @@ export default function Header() {
   const [macOpen, setMacOpen] = useState(false);
 
   return (
-    <>
+    <div onMouseLeave={() => setShutterOpen(false)}>
       <header className="px-6 py-4 max-w-screen-lg w-full mx-auto flex items-center justify-between">
         <Image
           src={"/assets/logo.png"}
@@ -37,7 +37,6 @@ export default function Header() {
                 key={index}
                 className="text-xs"
                 onMouseEnter={() => setShutterOpen(true)}
-                onMouseLeave={() => setShutterOpen(false)}
               >
                 <Link href={"#"}>{link}</Link>
               </li>
@@ -66,6 +65,6 @@ export default function Header() {
           </Shutter>
         )}
       </>
-    </>
+    </div>
   );
 }
