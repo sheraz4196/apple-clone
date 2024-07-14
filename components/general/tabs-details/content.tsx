@@ -180,6 +180,37 @@ export default function Content({ content }: Options) {
             </div>
           </>
         )}
+        {content === "support" && (
+          <>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">
+                Learn About Support Services
+              </p>
+              <p className="text-xl font-semibold">See All iPhone Models</p>
+              <p className="text-xl font-semibold">iPhone</p>
+              <p className="text-xl font-semibold">Mac</p>
+              <p className="text-xl font-semibold">AirPods</p>
+              <p className="text-xl font-semibold">Watch</p>
+              <p className="text-xl font-semibold">TV</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">Get Help</p>
+              <p className="text-xs font-semibold">Community</p>
+              <p className="text-xs font-semibold">
+                Check your service message
+              </p>
+              <p className="text-xs font-semibold">Repair</p>
+              <p className="text-xs font-semibold">Contact Us</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">Useful Topics</p>
+              <p className="text-xs font-semibold">Apple ID and password</p>
+              <p className="text-xs font-semibold">Billing and subscriptions</p>
+              <p className="text-xs font-semibold">Find App</p>
+              <p className="text-xs font-semibold">Accessibility</p>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
