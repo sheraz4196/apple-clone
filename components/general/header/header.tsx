@@ -7,10 +7,6 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import Sidebar from "./sidebar";
@@ -23,7 +19,7 @@ export default function Header() {
 
   return (
     <div onMouseLeave={() => setShutterOpen(false)}>
-      <header className="px-6 py-4 max-w-screen-lg w-full mx-auto flex items-center justify-between">
+      <header className="px-6 py-4 max-w-screen-lg w-full mx-auto flex items-center justify-between z-[200]">
         <Image
           src={"/assets/logo.png"}
           width={12}
@@ -58,13 +54,9 @@ export default function Header() {
           </Drawer>
         </div>
       </header>
-      <>
-        {shutterOpen && (
-          <Shutter>
-            <div className="h-96 bg-red-400"></div>
-          </Shutter>
-        )}
-      </>
+      <Shutter isOpen={shutterOpen}>
+        <div className="h-96 bg-red-400"></div>
+      </Shutter>
     </div>
   );
 }
