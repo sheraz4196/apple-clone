@@ -55,7 +55,7 @@ export default function Header() {
         </div>
       </header>
       <Shutter isOpen={shutterOpen}>
-        <Content content="airpods" />
+        <Content content="tv" />
       </Shutter>
     </div>
   );
