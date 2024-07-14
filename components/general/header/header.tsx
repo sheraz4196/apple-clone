@@ -16,7 +16,7 @@ import Content from "../tabs-details/content";
 
 export default function Header() {
   const [shutterOpen, setShutterOpen] = useState(false);
-
+  const [dropDown, setDropDown] = useState<string>();
   return (
     <div onMouseLeave={() => setShutterOpen(false)}>
       <header className="px-6 py-4 max-w-screen-lg w-full mx-auto flex items-center justify-between z-[200]">
@@ -34,7 +34,9 @@ export default function Header() {
                 className="text-xs"
                 onMouseEnter={() => setShutterOpen(true)}
               >
-                <Link href={"#"}>{link}</Link>
+                <Link href={"#"} onMouseOver={() => setDropDown(link.slug)}>
+                  {link.title}
+                </Link>
               </li>
             ))}
           </ol>
@@ -55,7 +57,7 @@ export default function Header() {
         </div>
       </header>
       <Shutter isOpen={shutterOpen}>
-        <Content content="support" />
+        <Content content={dropDown as string} />
       </Shutter>
     </div>
   );
