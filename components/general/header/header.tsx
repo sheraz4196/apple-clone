@@ -12,10 +12,10 @@ import {
 import Sidebar from "./sidebar";
 import { useState } from "react";
 import Shutter from "../tabs-details/shutter";
+import Content from "../tabs-details/content";
 
 export default function Header() {
   const [shutterOpen, setShutterOpen] = useState(false);
-  const [macOpen, setMacOpen] = useState(false);
 
   return (
     <div onMouseLeave={() => setShutterOpen(false)}>
@@ -55,7 +55,7 @@ export default function Header() {
         </div>
       </header>
       <Shutter isOpen={shutterOpen}>
-        <div className="h-96 bg-red-400"></div>
+        <Content mac />
       </Shutter>
     </div>
   );

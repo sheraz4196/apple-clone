@@ -25,18 +25,18 @@ interface ShutterProps {
 
 export default function Shutter({ children, isOpen }: ShutterProps) {
   return (
-    <div className="header-screen relative">
+    <div className=" relative">
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="absolute -top-8 backdrop-blur-md z-50 w-full flex flex-col h-full"
+            className="absolute -top-8 backdrop-blur-md z-50 w-full flex flex-col header-screen"
             initial="closed"
             animate="open"
             exit="closed"
             variants={shutterVariants}
           >
             <div className="w-full">{children}</div>
-            <div className="flex-1 w-full bg-white/60"></div>
+            <div className="flex-1 w-full bg-green"></div>
           </motion.div>
         )}
       </AnimatePresence>
