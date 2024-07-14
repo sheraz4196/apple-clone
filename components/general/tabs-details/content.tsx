@@ -154,6 +154,32 @@ export default function Content({ content }: Options) {
             </div>
           </>
         )}
+        {content === "entertainment" && (
+          <>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">
+                Learn About Entertainment services
+              </p>
+              <p className="text-xl font-semibold">
+                See Entertainment Services
+              </p>
+              <p className="text-xl font-semibold">Apple One</p>
+              <p className="text-xl font-semibold">Apple TV+</p>
+              <p className="text-xl font-semibold">Apple Arcade</p>
+              <p className="text-xl font-semibold">Apple Music</p>
+              <p className="text-xl font-semibold">Apple Fitness+</p>
+              <p className="text-xl font-semibold">Apple Podcasts</p>
+              <p className="text-xl font-semibold">Apple Books</p>
+              <p className="text-xl font-semibold">Apple Store</p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">Medium</p>
+              <p className="text-xs font-semibold">Support for Apple TV+</p>
+              <p className="text-xs font-semibold">Support for Apple Music</p>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
