@@ -211,6 +211,18 @@ export default function Content({ content }: Options) {
             </div>
           </>
         )}
+        {content === "entertainment" && (
+          <>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">Explore</p>
+              <p className="text-xl font-semibold">Authorized Dealers</p>
+              <p className="text-xl font-semibold">
+                Service and Technical support
+              </p>
+              <p className="text-xl font-semibold">Consultancy</p>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
