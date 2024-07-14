@@ -111,6 +111,28 @@ export default function Content({ content }: Options) {
             </div>
           </>
         )}
+        {content === "airpods" && (
+          <>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">Meet the Apple Watch</p>
+              <p className="text-xl font-semibold">See All AirPods Models</p>
+              <p className="text-xl font-semibold">
+                AirPods Pro (2nd generation)
+              </p>
+              <p className="text-xl font-semibold">AirPods (2nd generation)</p>
+              <p className="text-xl font-semibold">
+                AirPods Pro (3nd generation)
+              </p>
+              <p className="text-xl font-semibold">AirPods Max</p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-zinc-600">More for the AirPods</p>
+              <p className="text-xs font-semibold">Apple Watch AirPos</p>
+              <p className="text-xs font-semibold">Apple Music</p>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
