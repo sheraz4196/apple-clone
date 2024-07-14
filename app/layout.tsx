@@ -7,9 +7,15 @@ import Footer from "@/components/general/footer/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Apple Clone",
-  description:
-    "A high-fidelity clone of the Apple.com website, built with Next.js and modern web technologies.",
+  title: {
+    default: "Apple Clone",
+    template: `%s | Apple Clone`,
+  },
+  openGraph: {
+    description:
+      "A high-fidelity clone of the Apple.com website, built with Next.js and modern web technologies.",
+    images: [],
+  },
   keywords: [
     "Apple",
     "Apple Clone",
@@ -21,6 +27,7 @@ export const metadata: Metadata = {
     "Responsive Design",
     "Apple Website",
   ],
+  metadataBase: new URL("https://apple-clone-ecru-five.vercel.app/"),
 };
 
 export default function RootLayout({
