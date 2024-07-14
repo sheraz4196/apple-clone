@@ -7,7 +7,7 @@ export default function Sidebar() {
       <ol>
         {NavLinks.map((link, index) => (
           <li key={index} className="text-2xl">
-            <Link href={"#"}>{link}</Link>
+            <Link href={"#"}>{link.title}</Link>
           </li>
         ))}
       </ol>
